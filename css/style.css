@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 20px 10px;
+    border: 1px solid black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 200px;
+    margin: 50px;
+    background-image: linear-gradient( #cc1111, #181717);
+}
+
+.wrapper img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center top;
+    border: 2px solid rgb(0, 0, 0);
+}
+
