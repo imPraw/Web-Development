@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
-
+html, body {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: burlywood;
@@ -70,16 +71,98 @@ a:hover {
     font-family: "Teko", sans-serif;
 }
 
-.hero-section__link {
+.button-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.hero-section__link {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
     color: black;
     background-color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none; 
 }
+
  
 .hero-section__link:hover {
     background-color: #d14c74;
     color: white;
+}
+
+.quote {
+    width: 100%;
+    min-height: 300px;
+    background-color: #ffffff;
+    color: gold;
+    font-family: "Teko", sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 15px;
+    text-align: right;
+    font-size: 1rem;
+    color: #555;
+}
+
+.assignment-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 60px 30px;
+}
+
+.assignment-link-card {
+    border: 1px solid #ccc;
+    width: 45%;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #b9b999;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Mobile Responsive Code*/
+@media (max-width: 767px) and (min-width: 500px) {
+    .assignment-link-card {
+    background-color: #5D6169;
+    }
+}
+
+.back-to-top {
+    background-color: rgba(255, 255, 255, 0.144);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+}
+
+.position-relative {
+    position: relative;
+}
+.position-absolute { 
+    position: absolute;
+    top:50%;
+    right: 50%;
+    /* height: 50px;
+    width: 50px;  */
+    transform: translate(50%, -50%);
 }
