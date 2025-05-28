@@ -75,6 +75,10 @@ let newArray = ['ram', 'shyam', 'hari'];
 console.table(newArray);
 console.log(newArray[0]);
 
-newArray.push('sita');
+newArray.push('sita'); // add element at the end
 console.table(newArray);
 
+newArray.pop(); // remove last element
+newArray.shift(); // remove first element 
+
+newArray.unshift('gita'); // add element at the beginning 
