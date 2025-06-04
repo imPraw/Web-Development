@@ -71,14 +71,60 @@
 // }
 // sum(x);
 
-let newArray = ['ram', 'shyam', 'hari'];
-console.table(newArray);
-console.log(newArray[0]);
+// let newArray = ['ram', 'shyam', 'hari'];
+// console.table(newArray);
+// console.log(newArray[0]);
 
-newArray.push('sita'); // add element at the end
-console.table(newArray);
+// newArray.push('sita'); // add element at the end
+// console.table(newArray);
 
-newArray.pop(); // remove last element
-newArray.shift(); // remove first element 
+// newArray.pop(); // remove last element
+// newArray.shift(); // remove first element 
 
-newArray.unshift('gita'); // add element at the beginning 
+// newArray.unshift('gita'); // add element at the beginning 
+
+
+
+// Week: 4
+//
+
+// const main = document.getElementById("main")
+// main.innerText="Luffy dai is a super hero"
+// console.log(main)
+
+const x = document.getElementsByClassName("main-class")
+x[0].innerText="Hello first"
+x[1].innerText="hello seoncd"
+x[2].innerHTML="<b> Hello third </b>"
+
+
+// Week: 5
+
+const textElements = document.querySelectorAll('.wrapper .text')
+const textElementLenth = textElements.length;
+
+// console.log(textElements.length)
+// console.log(textElements[0].style.backgroundColor = "yellow") 
+// console.log(textElements[1].style.backgroundColor = "grey") 
+
+// Accessing elements using for loop
+// for(let i = 0; i < textElementLenth; i++){
+//     // console.log(textElements[i])
+//     if(i == 0){
+//         textElements[i].style.backgroundColor = "yellow";
+//     }
+// }
+
+// Accessing elements using forEach loop
+textElements.forEach((textElements, index) => {
+    console.log (textElements, index)
+    if (index == 0)
+    {
+        textElements.style.backgroundColor = "yellow"
+    } else if (index == 1)
+    {
+        textElements.style.backgroundColor = "grey"
+    }
+})
+
+
